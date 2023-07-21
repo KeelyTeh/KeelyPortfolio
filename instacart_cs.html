@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Instacart Case Study</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title"></a>
+				<!-- Line above, I deleted 'Hyperspace' from class='title>Hyperspace</a?'-->
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="elements.html"  class="active">Case Study</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Instacart</h1>
+
+							<!-- Text -->
+								<section>
+									<h2>Introduction</h2></br>
+									<h3>Problem:</h3>
+									<p>Instacart’s sales were doing well, but to continue to grow, the grocer needed to understand the purchasing behavior of different customer segments. Before conducting by analysis, I examined customer goals and objectives.
+									</p>
+									<h3>Context:</h3>
+									<p>I carried out this analysis as a student for a project in CareerFoundry's Data Analytics Program. The purpose of this project was to become familiar with Python skills commonly used by data analysts. </p>
+									<h3>Goal:</h3>
+									<p>The goal was to help the client reach the right customers at the right time with the most effective advertising and marketing strategies. 
+									</p>
+									<h3>Customer Objectives:</h3>
+									<p>These are customer questions and concerns I took into account before conducting the analysis. These questions were especially important to process steps 5-7 found in the process section below.</p>								
+									<div style="text-align: center;">
+										<div class="row gtr-uniform">
+											<div class="col-12"><span class="centerImage"><img src="images/customer_objectives_fm_pdf.jpg" width=700 text-align="center" alt="" /></span></div>
+										</div>
+									</div></br>									
+									<!-- Lists -->
+
+								<section>
+									<div class="row">
+										<div class="col-6 col-12-medium">
+											<h3>Tools:</h3>
+											<ul>
+												<li>Python</li>
+												<li>Jupyter</li>
+												<li>Excel</li>
+											</ul>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-6 col-12-medium">
+											<h3>Data:</h3>
+											<ul>
+												<li>Orders</li>
+												<li>Products</li>
+												<li>Customers</li>
+												<li>Orders Products Prior</li>
+												<li>Departments</li>
+											</ul>
+										</div>
+									</div>
+									<p>To view the data sets, click <a href="https://drive.google.com/drive/folders/1_YBVPrqmpFRM_SmKD1sr0WE-WWoXThJ8?usp=sharing">here</a>.</p>
+									<hr />
+									<h2>Process</h2></br>
+							<!-- Table -->
+							<section>
+								<h3>Process Steps:</h3>
+								<div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th>Step</th>
+												<th>Skills</th>
+												<th>Purpose</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1. Importing & exploring data</td>
+												<td>Viewed data sets, calculated descriptive statistics, and checked data types.</td>
+												<td>Explored data to better prepare for cleaning and wrangling steps.</td>
+											</tr>																			
+											<tr>
+												<td>2. Data wrangling & subsetting</td>
+												<td>Transposed data sets, viewed categories of data, changed data types, and changed column names.</td>
+												<td>Prepared data for analysis, explored data, promoted faster processing speed, and made data categories more intuitive for client.</td>
+											</tr>											
+											<tr>
+												<td>3. Data cleaning</td>
+												<td>Addressed missing data, duplicate records, mixed data types, and other errors.</td>
+												<td>Prepared data for analysis and reduced potential for error.</td>
+											</tr>
+											<tr>
+												<td>4. Merging data sets</td>
+												<td>Joined data sets together.</td>
+												<td>Made analysis easier and helped find relationships between variables.</td>
+											</tr>
+											<tr>
+												<td>5. Deriving new variables</td>
+												<td>Created new columns in the newly merged data set that were based on values in other columns.</td>
+												<td>Created important categories for future analysis and visualizations such as customer region, age, family size, and other factors.</td>
+											</tr>
+											<tr>
+												<td>6. Grouping & aggregating</td>
+												<td>Grouped data set by one or more columns and combined with aggregate functions to see basic statistics of grouped data.</td>
+												<td>Allowed for columns creation based on values of categories of data, expanding possibilities in visualization step.</td>
+											</tr>
+											<tr>
+												<td>7. Visualization</td>
+												<td>Created scatterplots, bar charts, heatmaps, and other charts and graphs.</td>
+												<td>Fostered communication of results and recommendations with client.</td>
+											</tr>											
+										</tbody>
+									</table>
+								</div>
+							</section>
+									<h3>Process Details:</h3>
+									<p>This is an example of creating new variables (process step 5 above). This allowed me to create new columns within the data set to be able to visualize the data by different categories. Here, I began by using Python code to divide the data set records by customer region. I then made visualizations based on customer region. I went through a similar process to categorize the data by other categories, such as customer age, family size, frequency of placed orders, and so on.</p>
+									<pre><code>Northeast = ['Maine','New Hampshire','Vermont','Massachusetts','Rhode Island','Connecticut','New York','Pennsylvania','New Jersey']
+Midwest = ['Wisconsin','Michigan','Illinois','Indiana','Ohio','North Dakota','South Dakota','Nebraska','Kansas','Minnesota','Iowa','Missouri']
+South = ['Delaware', 'Maryland', 'District of Columbia', 'Virginia', 'West Virginia', 'North Carolina', 'South Carolina', 'Georgia', 'Florida', 'Kentucky',
+'Tennessee', 'Mississippi', 'Alabama', 'Oklahoma', 'Texas', 'Arkansas', 'Louisiana']
+West = ['Idaho', 'Montana', 'Wyoming', 'Nevada', 'Utah', 'Colorado', 'Arizona', 'New Mexico', 'Alaska', 'Washington', 'Oregon', 'California', 'Hawaii']
+
+df_all.loc[df_all['state'].isin(Northeast), 'region'] = 'Northeast'
+df_all.loc[df_all['state'].isin(Midwest), 'region'] = 'Midwest'
+df_all.loc[df_all['state'].isin(South), 'region'] = 'South'
+df_all.loc[df_all['state'].isin(West), 'region'] = 'West'
+									</code></pre></br>
+									<div style="text-align: center;">
+										<div class="row gtr-uniform">
+											<div class="col-12"><span class="centerImage"><img src="images/bar_region.png" width=350 text-align="center" alt="" /></span><figcaption>This is a visualiztion made after categorizing the data by region.</figcaption></div>
+										</div>
+									</div></br>
+									<section>
+										<blockquote><h4>Comparing Two Variables at Once:</h4>
+										<p>When comparing two flags or categories at once, crosstabs, clustered bar charts, and heatmaps were quite helpful. Referring to the images below, the crosstab function in Pandas (a Python library) was used to count the number of items purchased by looking at two categories, region and customer income, while the clustered bar chart visualized this relationship. The heatmap was also used to show items purchased by region and grocery store department.</p></blockquote>
+										<div class="box alt">
+											<div class="row gtr-uniform">
+												<div class="col-4"><span class="image fit"><img src="images/ic_income_region_crosstab.jpg" alt="" /></span><figcaption>Crosstab</figcaption></div>
+												<div class="col-4"><span class="image fit"><img src="images/ic_income_region.png" alt="" /></span><figcaption>Clustered bar chart</figcaption></div>
+												<div class="col-4"><span class="image fit"><img src="images/ic_htmap_region_dept.png" alt="" /></span><figcaption>Heatmap</figcaption></div>
+											</div>
+										</div>
+									</section>
+									<blockquote><h4>Surprising Results:</h4>
+									<p>When I compared two or more variables at once, they seemed to be independent of one another. For example, if I looked at region and department, the popular departments in each region were the same as the population as a whole. All relationship pairs in the data set followed this pattern, whether it was income category and department or any other relationship pair.</p></blockquote>						
+									<hr />
+									<h2>Recommendations</h2></br>
+									<h3>Primary Customer Demographics & Product Information:</h3>
+									<p>Boost sales by advertising during slower days of the week and times of day, </br> which is Tuesday & Wednesday in the early morning and in the evening </br>starting after 5 p.m. Target the demographics responsible for the most sales </br>during this time. See description below.
+									</p>
+									<div class="row">
+										<div class="col-6 col-12-medium">
+											<ul>
+												<li>Young & middle-aged customers</li>
+												<li>Mid-sized families (1 or 2 children)</li>
+												<li>Middle income customers</li>
+												<li>South and western customers</li>
+												<li>Regular & frequent customers</li>
+												<li>Mid- & low-range priced products</li>
+												<li>Popular departments: produce, dairy/eggs, 
+												</br>snacks, beverages, frozen, pantry</li>
+											</ul>
+										</div>
+									</div>
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-4"><span class="image fit"><img src="images/bar_customer_ages.png" alt="" /></span><figcaption>Young adult and middle-aged customers buy the most products.</figcaption></div>
+											<div class="col-4"><span class="image fit"><img src="images/bar_customer_income.png" alt="" /></span><figcaption>Middle-income customers are responsible for most of Instacart's business.</figcaption></div>
+											<div class="col-4"><span class="image fit"><img src="images/bar_departments.png" alt="" /></span><figcaption>See in which departments most purchases are made.</figcaption></div>
+										</div>
+									</div>									
+									<h3>Most Frequent Shoppers:</h3>
+									<p>Frequency is the time duration since a customer's previous order. Here are </br> the insights and recommendations regarding frequency.</p>
+									<div class="row">
+										<div class="col-6 col-12-medium">
+											<ul>
+												<li>Young adult and medium-sized households are the most frequent shoppers.</li>
+												<li>To encourage other customers to shop more frequently, offer coupons, sales, and free gifts with purchase with quickly approaching expiration dates to the following groups: middle-aged and older adults, childless and large households.</li>
+											</ul>
+										</div>
+									</div>
+									<h3>High Rollers:</h3>
+									<p>Customers are more likely to spend liberally in the middle of the night and early morning hours on the </br>weekend. Run ads and offer discounts for high-range priced products during the weekend between 3 and 7 a.m. 
+									</p>
+								<div class="box alt">
+									<div class="row gtr-uniform">
+										<div class="col-4"><span class="image fit"><img src="images/line_prices_day.png" alt="" /></span><figcaption>Customers spend more money per item during the weekend.</figcaption></div>
+										<div class="col-4"><span class="image fit"><img src="images/line_hour_prices.png" alt="" /></span><figcaption>Customers are more likely to buy higher priced items in the early morning.</figcaption></div>
+									</div>
+								</div>
+								<blockquote><h4>Retrospective:</h4>
+									<p>If I were to redo this analysis, I might add more complex customer profiles, such as vegetarians, young parents, and so on. 
+										My goal at the time, however, was to keep the results simple and easy to understand. In retrospect, I may have consulted the client
+										about their customer segements of interest and conducted additional market analysis of important or emerging customer segments. 
+										Finally, I would only display results that were notable and significant and display them separately from the other customer data.
+									</blockquote>								
+								<h3>For More:</h3>
+								<p>To view Python scripts, more visualizations, or read more insights & recommendations, click the link below.</p>
+								<ul class="actions">
+									<li><a href="https://github.com/KeelyTeh/CareerFoundryProgram/tree/Python_Instacart_Analysis" class="button">View Project Files</a></li>
+								</ul>
+
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
