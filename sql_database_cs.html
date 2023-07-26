@@ -189,7 +189,7 @@ END$$
 								<p>Views and stores procedures allow the user, or in this case the client HealthySnacks, quickly retrieve important 
 									information from the database without having to write the code themselves. This particular view allows the user
 									to look at the number of products in each category as well as the lowest and highest priced items in each of those
-									categories. The code "HAVING COUNT(P.ProductID) > 2" means that each category must have at least two products in
+									categories. The code "HAVING COUNT(P.ProductID) > 2" means that each category must have at more than two products in
 									order to be displayed in the view results.
 								</p>
 								<pre><code>SELECT PC.CategoryName, PC.ProductCategoryID, COUNT(P.ProductID) AS 'Count of Products in Category', 
